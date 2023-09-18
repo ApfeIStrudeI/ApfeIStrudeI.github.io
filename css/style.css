@@ -1,0 +1,209 @@
+*{
+	font-family: 'Roboto';
+}
+nav{
+	height: 50px;
+	background: #212121;
+}
+header{
+	position: relative;
+}
+.menu{
+	display: flex;
+	justify-content: space-between;
+	padding: 13px 70px;
+	margin: 0;
+	list-style-type: none;
+}
+.menu_link{
+	text-decoration: none;
+	color: #FFF;
+	font-family: Roboto;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 300;
+}
+.menu_item{
+	border-right: 2px dotted #111;
+	padding-right: 44px;
+}
+.subheader{
+	position: absolute;
+	width: 100%;
+	height: 87px;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+.subheader_oficial{
+	color: rgba(255, 255, 255, 0.5);
+	font-family: Roboto;
+	font-size: 13px;
+	font-style: normal;
+	font-weight: 100;
+}
+.subheader_logo{
+	display: block;
+	max-width: 100%;
+	margin-top: 16px;
+}
+.subheader_phone{
+	display: block;
+	margin-top: 8px;
+	color: #FFF;
+	text-align: right;
+	font-family: Roboto;
+	font-size: 22px;
+	font-style: normal;
+	font-weight: 400;
+	text-transform: uppercase;
+	text-decoration: none;
+	line-height: 12px;
+}
+.subheader_call{
+	color: #FFF;
+	text-align: right;
+	font-family: Roboto;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 300;
+	margin-top: 21px;
+}
+.subheader_btn{
+	color: #FFF;
+	text-align: center;
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+	font-family: Roboto;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	text-transform: uppercase;
+	border-radius: 4px;
+	background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+	box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.12) inset;
+	width: 172px;
+	height: 46px;
+	border: none;
+	margin-top: 21px;
+}
+.promo{
+	padding: 150px 0 135px 0;
+	min-height: 800px;
+	background: url(../img/uber_bg.png) center center/cover no-repeat;
+}
+.promo .promo_header{
+	color: #FFF;
+	text-align: center;
+	font-family: Roboto;
+	font-size: 60px;
+	font-style: normal;
+	font-weight: 900;
+	text-transform: uppercase;
+}
+.promo .promo_subheader{
+	color: #FFF;
+	font-family: Roboto;
+	font-size: 36px;
+	font-style: normal;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+}
+.promo .promo_descr{
+	color: #FFF;
+	text-align: center;
+	font-family: Roboto;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 350;
+	margin-top: 23px;
+}
+.promo_btn{
+	display: block;
+	width: 259px;
+	height: 63px;
+	flex-shrink: 0;
+	border-radius: 4px;
+	background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+	box-shadow: 0px -4px 0px 0px rgba(0, 0, 0, 0.12) inset;
+	border: none;
+	color: #FFF;
+	text-align: center;
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+	font-family: Roboto;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 63px; /* 350% */
+	text-transform: uppercase;
+	margin: 118px auto 0 auto;
+}
+.hateful_eight{
+	margin-top: 20px;
+	min-height: 816px;
+}
+.hateful_eight_subheader{
+	display: block;
+	margin: 0 auto;
+	width: 115px;
+	height: 27px;
+	flex-shrink: 0;
+	background-color: #111;
+	color: #FFF;
+	text-align: center;
+	font-family: Roboto;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 11px; /* 100% */
+	text-transform: uppercase;
+	padding: 8px;
+	margin-bottom: 33px;
+}
+.hateful_eight_header{
+	color: #222;
+	text-align: center;
+	font-family: Roboto;
+	font-size: 38px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 48px; /* 126.316% */
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 16px;
+}
+span{
+	color: #1EACC7;
+	font-family: Roboto;
+	font-size: 17px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 21px;
+}
+.hateful_eight_col{
+	display: flex;
+	align-items: center;
+	margin-bottom: 26px;
+}
+
+.hateful_eight_descr{
+	text-align: justify;
+	padding-left: 25px;
+	color: #202020;
+	font-family: Roboto;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 21px;
+	padding-right: 25px;
+}
+.round{
+	display: flex;
+	align-items: center;
+	width: 116px;
+	height: 116px;
+	flex-shrink: 0;
+	border-radius: 100%;
+	background: #1EACC7;
+}
+.hateful_eight_img{
+	margin: 0 auto;
+}
