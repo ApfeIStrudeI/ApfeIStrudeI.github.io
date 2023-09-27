@@ -1,0 +1,764 @@
+body
+	position: relative
+	background: #08090A 
+.mobile
+	display: none
+header
+	height: 76px
+	position: relative
+	nav 
+		position: fixed
+		width: 100%
+		height: 76px
+		z-index: 2
+		.container
+			.row
+				display: flex
+				justify-content: space-between
+				.logo
+					padding-top: 21px
+					z-index: 2
+				.menu
+					list-style-type: none
+					display: flex
+					justify-content: space-around
+					padding-top: 45px
+					margin: 0
+					padding-left: 0
+					z-index: 2
+					&_link 
+						display: flex
+						text-decoration: none 
+						color: #FFF
+						text-align: right
+						font-family: Open Sans
+						font-size: 12px
+						font-style: normal
+						font-weight: 700
+						line-height: normal
+						letter-spacing: 1.2px
+						text-transform: uppercase
+						z-index: 2
+						transition: 0.5s all
+					&_item
+						z-index: 2
+						&::after
+							content: ''
+							display: block
+							width: 0%
+							border-radius: 1px
+							height: 1px
+							background-color: #FFF
+							transition: 0.5s all
+						&:hover
+							&::after
+								width: 100%
+					&_devider 
+						display: flex
+						justify-content: flex-end
+						margin-top: 38px
+						z-index: 2
+						&::before
+							content: ''
+							width: 1px
+							border-radius: 1px
+							height: 30px
+							flex-shrink: 0
+							background-color: #FFF
+				.applications
+					display: flex
+					justify-content: space-around
+					margin-top: 38px
+					z-index: 2
+.promo
+	display: flex
+	align-items: center
+	position: relative
+	width: 100%
+	height: 100vh
+	color: #FFF
+	background: url('../img/Group 1 (1).png')  center center/cover no-repeat
+	transform: translateY(-80px)
+	z-index: 1
+	&::after
+		content: ''
+		display: block
+		position: absolute
+		width: inherit
+		height: inherit
+		top: 0
+		left: 0
+		background: radial-gradient(189.96% 61.18% at 50% 38.82%, #ffb54800 0%, #342c1dcc 73.22%, #08090A 99.74%)
+		z-index: 1
+	&_box
+		display: flex
+		padding-top: 35vh
+		height: 100vh
+		flex-direction: column
+		justify-content: space-between
+		.row
+			display: flex
+	&_btn
+		position: relative
+		display: flex
+		padding: 0
+		margin: 0 auto
+		width: 269.5px
+		height: 60px
+		flex-shrink: 0
+		z-index: 2
+		border: none
+		border-radius: 4px
+		background: linear-gradient(195deg, #ffb648c0 11.27%, #f3b034bd 90.4%)
+		&::after
+			content: ''
+			display: flex
+			position: absolute
+			width: 0%
+			border-radius: 4px
+			height: 60px
+			background: linear-gradient(195deg, #FFB548 11.27%, #F3AF34 90.4%)
+			transition: 0.5s all
+		&:hover
+			&::after
+				width: 100%
+		&:active
+			&::before
+				content: ''
+				display: flex
+				position: absolute
+				width: 100%
+				height: 60px
+				background: rgba(190, 141, 52, 1)
+				z-index: 3
+				border-radius: 4px
+		&_box
+			z-index: 3	
+			margin: 17px
+			&_descr
+				display: inline-flex
+				color: #1A1917
+				text-align: justify
+				font-family: Open Sans
+				font-size: 16px
+				font-style: normal
+				font-weight: 700
+				line-height: normal	
+				&::after
+					content: ''
+					width: 1px
+					border-radius: 1px
+					height: 24px
+					flex-shrink: 0
+					background-color: #1a191794	
+			&_price
+				display: inline-flex
+				color: #1A1917
+				text-align: justify
+				font-family: Open Sans
+				font-size: 16px
+				font-style: normal
+				font-weight: 700
+				line-height: normal
+	&_story
+		position: relative
+		margin-bottom: 50px
+		display: flex
+		flex-direction: column
+		align-items: center
+		z-index: 2
+		&_text
+			display: block
+			text-decoration: none 
+			color: #FFF
+			text-align: justify
+			font-family: Open Sans
+			font-size: 13px
+			font-style: normal
+			font-weight: 700
+			line-height: 30px
+			text-transform: uppercase
+			z-index: 2
+		&_img
+			display: block
+			margin: 0 auto
+			z-index: 2
+.promo_title
+	position: relative
+	text-align: center
+	font-family: Bebas Neue
+	font-size: 80px
+	font-style: normal
+	font-weight: 500
+	letter-spacing: 3px
+	text-transform: uppercase
+	z-index: 2
+.promo_subtitle
+	position: relative
+	margin-top: -10px
+	text-align: center
+	font-family: Bebas Neue
+	font-size: 24px
+	font-style: normal
+	font-weight: 500
+	letter-spacing: 2px
+	margin-bottom: 29px
+	z-index: 2
+.about
+	min-height: 961px
+	width: 100%
+	display: flex
+	position: relative
+	color: #FFF
+	background: url('../img/Group 4.png')  center center/cover no-repeat
+	transform: translateY(-80px)
+	z-index: 1
+	&::after
+		content: ''
+		display: block
+		position: absolute
+		width: inherit
+		min-height: inherit
+		background: radial-gradient(150.03% 49.57% at 85.03% 49.54%, rgba(255, 255, 255, 0.00) 0%, rgba(0, 0, 0, 0.00) 60.63%, #08090A 99.74%)
+		z-index: 1
+	.promo_title
+		text-align: left
+	.promo_subtitle
+		text-align: left
+		margin-top: 200px
+		margin-bottom: 9px
+	&_devider
+		width: 100%
+		height: 3px
+		flex-shrink: 0
+		border-radius: 4px
+		background: #FFF
+		margin-bottom: 32px
+	b
+		font-weight: 700
+	span
+		position: relative
+		&::after
+			content: ''
+			position: absolute
+			display: block
+			margin-left: 138%
+			width: 122.058px
+			height: 6.271px
+			border-radius: 4px
+			background: #FFB548
+	&_img
+		display: flex
+		flex-direction: column
+		justify-content: center
+		max-height: 100%
+		max-width: 100%
+	.row
+		height: 100%
+	.promo_title
+		padding-right: 200px
+.about_descr
+	color: #FFF
+	text-align: justify
+	font-family: Open Sans
+	font-size: 18px
+	font-style: normal
+	font-weight: 200
+	line-height: 22px
+	padding: 0 120px
+.features
+	min-height: 961px
+	width: 100%
+	display: flex
+	position: relative
+	color: #FFF
+	background: url('../img/Group.jpg')  center center/cover no-repeat
+	transform: translateY(-80px)
+	z-index: 1
+	&::after
+		content: ''
+		display: block
+		position: absolute
+		width: inherit
+		min-height: inherit
+		background: radial-gradient(140.03% 50.57% at 85.03% 49.54%, rgba(255, 255, 255, 0.00) 0%, rgba(0, 0, 0, 0.00) 60.63%, #08090A 99.74%)
+		z-index: 1
+	&_first
+		padding-top: 200px
+	.box
+		.row
+			margin: 20px 0
+	.list_item
+		display: flex
+		flex-direction: row
+		align-items: center
+		justify-content: center
+		&_circle
+			display: flex
+			width: 17px
+			height: 17px
+			background: none
+			border-radius: 100%
+			border: 2px solid #FFF
+			&_first
+				border: 2px solid #FFF 
+				background: #FFF
+		&_devider
+			display: flex
+			width: 2px
+			height: 100%
+			flex-shrink: 0
+			background: #FFF
+		&_title
+			display: flex
+			margin: 0
+			color: #FFB548
+			font-family: Bebas Neue
+			font-size: 36px
+			font-style: normal
+			font-weight: 500
+			line-height: normal
+			letter-spacing: 2px
+		&_descr
+			display: flex
+			text-align: justify
+			padding-right: 60px
+	.list_header
+		justify-content: flex-start
+	.promo_title
+		text-align: left
+		margin-bottom: 70px
+	.promo_subtitle
+		text-align: left
+		margin-bottom: 9px
+.requirements
+	min-height: 961px
+	width: 100%
+	display: flex
+	position: relative
+	color: #FFF
+	background: url('../img/bg image 4.png')  center center/cover no-repeat
+	transform: translateY(-80px)
+	z-index: 1
+	&::after
+		content: ''
+		display: block
+		position: absolute
+		width: inherit
+		min-height: inherit
+		background: radial-gradient(50% 49.23% at 64.32% 47.1%, rgba(255, 255, 255, 0.00) 3.36%, rgba(0, 0, 0, 0.00) 19.22%, #08090A 99.74%)
+		z-index: 1
+	&_box
+		z-index: 2
+		margin-top: 120px
+	.titles
+		margin-top: 145px
+	table
+		border-collapse: collapse		
+		border: 1px solid rgba(151, 151, 151, 0.6)
+		width: 594px
+		td
+			border-width: 1px
+			padding-top: 14px
+			padding-left: 20px
+			height: 125px
+			width: 286px
+			vertical-align: top
+			text-align: left
+			.td_title
+				color: #FFB548
+				font-family: Bebas Neue
+				font-size: 24px
+				font-style: normal
+				font-weight: 500
+				line-height: normal
+				letter-spacing: 2px
+				margin-bottom: 15px
+.reviews
+	min-height: 961px
+	width: 100%
+	display: flex
+	position: relative
+	color: #FFF
+	background: url('../img/bg image 3.jpg')  center center/cover no-repeat
+	transform: translateY(-80px)
+	z-index: 1
+	&::after
+		content: ''
+		display: block
+		position: absolute
+		width: inherit
+		min-height: inherit
+		background: radial-gradient(140.03% 40.57% at 85.03% 42.54%, rgba(255, 255, 255, 0.00) 0%, rgba(0, 0, 0, 0.00) 60.63%, #08090A 99.74%)
+		z-index: 1
+	.row
+		height: 100%
+		display: flex
+		flex-direction: row
+	&_con
+		height: 100%
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+		justify-content: center
+	&_box
+		height: 100%
+		display: flex
+		flex-direction: column
+		justify-content: center
+		z-index: 2
+		&_Under
+			height: 655px
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+		.reviews_item
+			display: flex
+			flex-direction: row
+			justify-content: flex-end
+			&:nth-child(2)
+				justify-content: flex-start
+	.reviews_frame
+		width: 453px
+		height: 183px
+		background: rgba(255, 255, 255, 0.08)
+		border-radius: 10px
+		padding: 16px
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		&_item
+			display: flex
+			width: 100%
+			&_header
+				width: inherit
+				display: flex
+				flex-direction: row
+				justify-content: flex-start
+				.if
+					padding-right: 25px
+				img
+					width: 69.954px
+					height: 65.795px
+				.item_subheader
+					width: 100%
+					display: flex
+					flex-direction: row
+					justify-content: space-between
+					img
+						width: 18.025px
+						height: 14px
+					h2
+						color: #FFB548
+						font-family: Bebas Neue
+						font-size: 24px
+						font-style: normal
+						font-weight: 500
+						line-height: normal
+						letter-spacing: 2px
+					h3
+						color: rgb(255, 255, 255, 0.5)
+						text-align: justify
+						font-family: Open Sans
+						font-size: 18px
+						font-style: normal
+						font-weight: 400
+						line-height: 10px
+		.date
+			color: rgb(255, 255, 255, 0.5)
+			font-family: Open Sans
+			font-size: 14px
+			font-style: normal
+			font-weight: 400
+			line-height: normal
+	.promo_title
+		text-align: left
+		margin-bottom: 25px
+		line-height: 80px
+	.promo_subtitle
+		text-align: left
+		margin-bottom: 29px
+	.about_descr
+		padding: 0 
+		z-index: 2
+		text-align: left
+		margin-bottom: 65px
+	.promo_btn
+		position: relative
+		display: flex
+		justify-content: center
+		margin: 0
+		padding: 0
+		width: 260.362px
+		height: 60px
+		flex-shrink: 0
+		z-index: 2
+		border: none
+		border-radius: 4px
+		background: linear-gradient(195deg, #ffb648 11.27%, #f3b034 90.4%)
+		&::after
+			content: ''
+			display: flex
+			position: absolute
+			width: 0%
+			border-radius: 4px
+			height: 60px
+			background: rgba(202, 203, 203, 1)
+			transition: 0.5s all
+		&:hover
+			&::after
+				width: 100%
+		&:active
+			&::before
+				content: ''
+				display: flex
+				position: absolute
+				width: 100%
+				height: 60px
+				background: rgba(84, 86, 87, 1)
+				z-index: 3
+				border-radius: 3px
+	.promo_btn_box
+		width: 100%
+		text-align: center
+.newsletter
+	min-height: 961px
+	width: 100%
+	display: flex
+	position: relative
+	color: #FFF
+	background: url('../img/Group 7.png')  center center/cover no-repeat
+	transform: translateY(-80px)
+	z-index: 1
+	&::after
+		content: ''
+		display: block
+		position: absolute
+		width: inherit
+		min-height: inherit
+		background: radial-gradient(280.03% 40.57% at 85.03% 42.54%, rgba(255, 255, 255, 0.00) 0%, rgba(0, 0, 0, 0.00) 60.63%, #08090A 99.74%)
+		z-index: 1
+	.row
+		height: 100%
+	&_con
+		padding-left: 46px
+		height: 100%
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+		justify-content: center
+	&_box
+		height: 100%
+		display: flex
+		flex-direction: column
+		justify-content: center
+		z-index: 2
+		&_Under
+			height: 655px
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+		.reviews_item
+			display: flex
+			flex-direction: row
+			justify-content: flex-end
+			&:nth-child(2)
+				justify-content: flex-start
+	.buttons_frame
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		width: 100%
+		height: 300px
+	.promo_title
+		text-align: left
+		margin-bottom: 25px
+		line-height: 80px
+	.promo_subtitle
+		text-align: left
+		margin-bottom: 29px
+	.about_descr
+		padding: 0 
+		z-index: 2
+		text-align: left
+		margin-bottom: 65px
+	.promo_btn
+		position: relative
+		display: flex
+		justify-content: center
+		margin: 0
+		padding: 0
+		width: 260px
+		height: 60px
+		flex-shrink: 0
+		z-index: 2
+		border: none
+		border-radius: 4px
+		background: linear-gradient(195deg, #ffb648 11.27%, #f3b034 90.4%)
+		&::after
+			content: ''
+			display: flex
+			position: absolute
+			width: 0%
+			border-radius: 4px
+			height: 60px
+			background: rgba(202, 203, 203, 1)
+			transition: 0.5s all
+		&:hover
+			&::after
+				width: 100%
+		&:active
+			&::before
+				content: ''
+				display: flex
+				position: absolute
+				width: 100%
+				height: 60px
+				background: rgba(84, 86, 87, 1)
+				z-index: 3
+				border-radius: 3px
+	.promo_btn_box
+		width: 100%
+		text-align: center
+	.second_btn
+		width: 366.922px
+		height: 60px
+		background: rgba(255, 255, 255, 0.08)
+		display: flex
+		justify-content: center
+		&::after
+			content: ''
+			display: flex
+			position: absolute
+			width: 0%
+			border-radius: 4px
+			height: 60px
+			background: rgba(84, 86, 87, 0.8)
+			transition: 0.5s all
+		.promo_btn_box
+			width: 100%
+			text-align: left
+			margin: 5px 22px
+	.address
+		color: #FFB548
+		font-family: Open Sans
+		font-size: 18px
+		font-style: normal
+		font-weight: 400
+		line-height: normal
+		z-index: 3
+	.email
+		color: rgb(255, 255, 255, 0.5)
+		font-family: Open Sans
+		font-size: 14px
+		font-style: normal
+		font-weight: 400
+		line-height: normal
+		z-index: 3
+
+footer
+	background: #08090A
+	height: 158px
+	width: 100%
+	display: flex
+	flex-direction: column
+	position: relative
+	justify-content: space-between
+	color: #FFF
+	transform: translateY(-80px)
+	.container
+		.panel
+			position: fixed
+			z-index: 2
+		.row
+			display: flex
+			justify-content: space-between
+			flex-direction: row
+			.logo
+				padding-top: 0
+				z-index: 2
+			.footer_menu
+				list-style-type: none
+				display: flex
+				justify-content: space-around
+				align-items: center
+				padding: 0
+				margin: 0
+				padding-left: 0
+				z-index: 2
+				&_link 
+					display: flex
+					text-decoration: none 
+					color: #FFF
+					text-align: right
+					font-family: Open Sans
+					font-size: 12px
+					font-style: normal
+					font-weight: 700
+					line-height: normal
+					letter-spacing: 1.2px
+					text-transform: uppercase
+					z-index: 2
+					transition: 0.5s all
+				&_item
+					z-index: 2
+					&::before
+						content: ''
+						display: block
+						margin: 0 auto
+						width: 0%
+						border-radius: 1px
+						height: 4px
+						background-color: rgba(233, 56, 48, 1)
+						transition: 0.11s all
+					&:hover
+						&::before
+							width: 4px
+				&_devider 
+					display: flex
+					justify-content: flex-end
+					margin-top: 38px
+					z-index: 2
+					&::before
+						content: ''
+						width: 1px
+						border-radius: 1px
+						height: 30px
+						flex-shrink: 0
+						background-color: #FFF
+			.applications
+				display: flex
+				justify-content: space-around
+				align-items: center
+				margin-top: 0
+				z-index: 2
+	.footer_devider
+		display: block
+		height: 1px
+		width: 100%
+		background: rgb(255, 255, 255, 0.5)
+		z-index: 2
+	.footer_item_box
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		align-items: center
+		.first
+			color: rgb(255, 255, 255, 0.5)
+			font-family: Open Sans
+			font-size: 14px
+			font-style: normal
+			font-weight: 400
+			line-height: normal
+		.second
+			color: #FFF
+			text-align: right
+			font-family: Open Sans
+			font-size: 12px
+			font-style: normal
+			font-weight: 500
+			line-height: normal
+			letter-spacing: 1.2px
+			text-transform: uppercase
+.MOB
+	display: none
