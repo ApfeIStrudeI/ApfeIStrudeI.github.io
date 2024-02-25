@@ -29,4 +29,34 @@ window.addEventListener('DOMContentLoaded', () => {
             topMobSc.classList.remove('top-mob-sc_active');
         }
     })
+
+    const tabs = document.querySelectorAll('.list_item_title'),
+          content = document.querySelectorAll('.tabtitle'),
+          tabsParent = document.querySelector('.box');
+
+    function hideTabContent() {
+        content.forEach(item => {
+            item.classList.remove('tabtitle_active');
+        });
+    }
+
+    function showTabContent(i = 0) {
+        content[i].classList.add('tabtitle_active');
+    }
+
+    hideTabContent();
+    showTabContent();
+
+    tabsParent.addEventListener('click', (event) => {
+        const target = event.target;
+
+        if (target && target.classList.contains('list_item_title')) {
+            tabs.forEach((item, i) => {
+                if (target == item) {
+                    hideTabContent();
+                    showTabContent(i);
+                }
+            });
+        }
+    });
 });
